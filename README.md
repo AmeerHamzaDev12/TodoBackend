@@ -1,1 +1,3 @@
-Code bs sahi hy
+Todo app backend 
+## Api created and Routes,
+## Help in learning
