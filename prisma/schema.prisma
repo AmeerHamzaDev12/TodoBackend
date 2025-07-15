@@ -19,6 +19,6 @@ model Todo {
   title     String
   completed Boolean  @default(false)
   createdAt DateTime @default(now())
-  userId    Int
+  userId    Int 
   user      User     @relation(fields: [userId], references: [id])
 }
