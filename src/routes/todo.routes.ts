@@ -5,13 +5,15 @@ import {
   toggleTodo,
   deleteTodo,
 } from '../controllers/todo.controllers';
+import { registerUser } from '../controllers/auth.controllers';
 import { authenticateToken } from '../middleware/authMiddleware';
 
 const router = express.Router();
 
-router.get('/todos', /* authenticateToken, */ getTodos);
-router.post('/todos',/* authenticateToken, */ createTodo);
-router.patch('/todos/:id',/* authenticateToken, */toggleTodo);
-router.delete('/todos/:id', /* authenticateToken, */deleteTodo);
+router.get('/todos',authenticateToken,  getTodos);
+router.post('/todos',authenticateToken, createTodo);
+router.patch('/todos/:id',authenticateToken, toggleTodo);
+router.delete('/todos/:id',authenticateToken, deleteTodo);
+router.post('/todos/register', registerUser);
 
 export default router;

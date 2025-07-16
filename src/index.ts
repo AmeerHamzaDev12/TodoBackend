@@ -8,12 +8,18 @@ import compression from 'compression';
 import todoRoutes from './routes/todo.routes';
 import prisma from './Prisma';
 
+
 dotenv.config();
 
 const app = express();
 
 app.use(helmet());
-app.use(cors({ origin: 'http://localhost:5173', credentials: true }));
+app.use(
+  cors({
+    origin: '*',
+  })
+);
+
 app.use(express.json());
 app.use(cookieParser());
 app.use(compression());
