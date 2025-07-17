@@ -1,9 +1,8 @@
 import { Request, Response } from 'express';
 import prisma from '../Prisma';
 
-// You previously defined: req.user?: { id: number }
 interface AuthRequest extends Request {
-  user?: { id: number };
+  user?: { id: string };
 }
 
 export const getTodos = async (req: AuthRequest, res: Response) => {
@@ -11,7 +10,7 @@ export const getTodos = async (req: AuthRequest, res: Response) => {
   if (!userId) return res.status(401).json({ message: 'Unauthorized' });
 
   const todos = await prisma.todo.findMany({
-    where: { userId }, // Fetch only logged-in user's todos
+    where: { userId }, 
   });
   res.json(todos);
 };
@@ -34,7 +33,7 @@ export const createTodo = async (req: AuthRequest, res: Response) => {
 };
 
 export const toggleTodo = async (req: AuthRequest, res: Response) => {
-  const id = parseInt(req.params.id);
+  const id = req.params.id;
   const userId = req.user?.id;
 
   const existingTodo = await prisma.todo.findUnique({ where: { id } });
@@ -52,7 +51,7 @@ export const toggleTodo = async (req: AuthRequest, res: Response) => {
 };
 
 export const deleteTodo = async (req: AuthRequest, res: Response) => {
-  const id = parseInt(req.params.id);
+  const id = req.params.id;
   const userId = req.user?.id;
 
   const existingTodo = await prisma.todo.findUnique({ where: { id } });

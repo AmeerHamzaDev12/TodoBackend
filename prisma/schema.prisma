@@ -8,17 +8,17 @@ generator client {
 }
 
 model User {
-  id       Int     @id @default(autoincrement())
+  id       String     @id @default(uuid())
   email    String  @unique
   password String
   todos    Todo[]
 }
 
 model Todo {
-  id        Int      @id @default(autoincrement())
+  id        String      @id @default(uuid())
   title     String
   completed Boolean  @default(false)
   createdAt DateTime @default(now())
-  userId    Int 
+  userId    String
   user      User     @relation(fields: [userId], references: [id])
 }
