@@ -6,8 +6,6 @@ import rateLimit from 'express-rate-limit';
 import cookieParser from 'cookie-parser';
 import compression from 'compression';
 import todoRoutes from './routes/todo.routes';
-import prisma from './Prisma';
-
 
 dotenv.config();
 
