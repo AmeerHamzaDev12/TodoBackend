@@ -1,0 +1,10 @@
+info: Login successful: 123@gmail.com {"timestamp":"2025-07-17T11:42:08.021Z"}
+info: User already exists: 123@gmail.com {"timestamp":"2025-07-17T11:55:42.219Z"}
+info: User registered successfully: test@gmail.com {"timestamp":"2025-07-17T12:10:33.255Z"}
+info: User registered successfully: 789@example.com {"timestamp":"2025-07-17T12:15:00.917Z"}
+info: User already exists: TEST@gmail.com {"timestamp":"2025-07-18T06:25:09.155Z"}
+info: User registered successfully: TEST123@gmail.com {"timestamp":"2025-07-18T06:25:21.048Z"}
+info: Login successful: TEST123@gmail.com {"timestamp":"2025-07-18T06:25:42.323Z"}
+info: User registered successfully: raoasifraz1@gmail.com {"timestamp":"2025-07-18T06:35:10.616Z"}
+info: Login successful: raoasifraz1@gmail.com {"timestamp":"2025-07-18T06:38:13.762Z"}
+info: Login successful: raoasifraz1@gmail.com {"timestamp":"2025-07-18T06:38:14.319Z"}
