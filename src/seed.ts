@@ -1,30 +1,37 @@
-// seed.ts
-import prisma from './Prisma';  // Adjust path if needed
+
+import prisma from './Prisma';
+
+import bcrypt from 'bcryptjs';
 
 async function main() {
-  // Check if user already exists to avoid duplicates
-  const existingUser = await prisma.user.findUnique({
-    where: { email: 'test@example.com' },
+  const hashedPassword = await bcrypt.hash('12345678', 10);
+
+  const user = await prisma.user.upsert({
+    where: { email: 'demo@example.com' }, 
+    update: {},                           
+    create: {                         
+      email: 'demo@example.com',
+      password: hashedPassword,
+    },
   });
 
-  if (!existingUser) {
-    const user = await prisma.user.create({
-      data: {
-        email: 'test@example.com',
-        password: 'somepassword',  // Remember: hash passwords in real apps!
-      },
-    });
-    console.log('User created:', user);
-  } else {
-    console.log('User already exists:', existingUser);
-  }
+
+  await prisma.todo.createMany({
+    data: [
+      { title: 'Learn Prisma', completed: false, userId: user.id },
+      { title: 'Build Todo App', completed: true, userId: user.id },
+    ],
+  });
+
+  console.log('🎉✅ Seed data inserted successfully');
 }
+
 
 main()
   .catch((e) => {
-    console.error(e);
+    console.error('❌ Seeding failed:', e);
     process.exit(1);
   })
   .finally(async () => {
-    await prisma.$disconnect();
+    await prisma.$disconnect(); 
   });

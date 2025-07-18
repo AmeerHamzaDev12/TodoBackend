@@ -58,3 +58,35 @@ info: Login successful: 123@gmail.com {"timestamp":"2025-07-18T11:41:42.129Z"}
 info: User registered successfully: hana@gmail.com {"timestamp":"2025-07-18T11:45:42.967Z"}
 info: User registered successfully: Testing33221@gmail.com {"timestamp":"2025-07-18T11:47:59.578Z"}
 info: Login successful: 123@gmail.com {"timestamp":"2025-07-18T11:50:50.068Z"}
+info: User registered successfully: asadpgc@gmail.com {"timestamp":"2025-07-18T12:14:09.036Z"}
+warn: Login attempt without email or password {"timestamp":"2025-07-18T12:14:33.193Z"}
+warn: Login failed - wrong password for email: asadpgc125@gmail.com {"timestamp":"2025-07-18T12:16:55.477Z"}
+warn: Login failed - wrong password for email: asadpgc125@gmail.com {"timestamp":"2025-07-18T12:19:20.327Z"}
+warn: Login failed - wrong password for email: asadpgc125@gmail.com {"timestamp":"2025-07-18T12:19:22.584Z"}
+warn: Login failed - wrong password for email: asadpgc125@gmail.com {"timestamp":"2025-07-18T12:20:02.808Z"}
+info: User registered successfully: asad@gmail.com {"timestamp":"2025-07-18T12:20:36.869Z"}
+warn: Login failed - wrong password for email: asadpgc125@gmail.com {"timestamp":"2025-07-18T12:20:49.409Z"}
+warn: Login failed - wrong password for email: asadpgc125@gmail.com {"timestamp":"2025-07-18T12:21:05.637Z"}
+warn: Login failed - wrong password for email: asadpgc125@gmail.com {"timestamp":"2025-07-18T12:21:19.592Z"}
+info: Login successful: asad@gmail.com {"timestamp":"2025-07-18T12:21:30.728Z"}
+warn: Login failed - wrong password for email: asadpgc125@gmail.com {"timestamp":"2025-07-18T12:21:50.370Z"}
+info: Login successful: 123@gmail.com {"timestamp":"2025-07-18T12:27:04.953Z"}
+warn: Login failed - email not found: asad123@gmail.com {"timestamp":"2025-07-18T12:36:35.190Z"}
+info: Login successful: asad@gmail.com {"timestamp":"2025-07-18T12:36:54.105Z"}
+info: Login successful: asad@gmail.com {"timestamp":"2025-07-18T12:38:10.414Z"}
+info: User registered successfully: raoh2651@gmail.com {"timestamp":"2025-07-18T12:39:59.675Z"}
+info: User already exists: raoh2651@gmail.com {"timestamp":"2025-07-18T12:40:03.117Z"}
+warn: Login failed - wrong password for email: raoh2651@gmail.com {"timestamp":"2025-07-18T12:41:43.165Z"}
+warn: Login failed - wrong password for email: raoh2651@gmail.com {"timestamp":"2025-07-18T13:19:11.554Z"}
+warn: Login failed - wrong password for email: raoh2651@gmail.com {"timestamp":"2025-07-18T13:19:24.086Z"}
+warn: Login failed - wrong password for email: raoh2651@gmail.com {"timestamp":"2025-07-18T13:19:32.389Z"}
+warn: Login failed - wrong password for email: raoh2651@gmail.com {"timestamp":"2025-07-18T13:19:34.550Z"}
+warn: Login failed - wrong password for email: raoh2651@gmail.com {"timestamp":"2025-07-18T13:19:43.362Z"}
+info: Login successful: 123@gmail.com {"timestamp":"2025-07-18T13:23:14.681Z"}
+info: Login successful: asad@gmail.com {"timestamp":"2025-07-18T13:31:31.977Z"}
+info: User registered successfully: elonmusk.SpaceX@gmail.com {"timestamp":"2025-07-18T13:35:22.597Z"}
+info: User already exists: elonmusk.SpaceX@gmail.com {"timestamp":"2025-07-18T13:35:29.089Z"}
+info: Login successful: elonmusk.SpaceX@gmail.com {"timestamp":"2025-07-18T13:36:38.687Z"}
+info: Login successful: 123@gmail.com {"timestamp":"2025-07-18T14:27:18.714Z"}
+info: User already exists: asad@gmail.com {"timestamp":"2025-07-18T14:56:10.555Z"}
+info: User already exists: asad@gmail.com {"timestamp":"2025-07-18T14:56:10.605Z"}
