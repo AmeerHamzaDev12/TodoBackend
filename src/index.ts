@@ -6,6 +6,7 @@ import rateLimit from 'express-rate-limit';
 import cookieParser from 'cookie-parser';
 import compression from 'compression';
 import todoRoutes from './routes/todo.routes';
+import authrouter from './routes/auth.routes';
 
 dotenv.config();
 
@@ -22,6 +23,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(compression());
 app.use('/api', todoRoutes);
+app.use('/api', authrouter);
 app.use(rateLimit({ windowMs: 15 * 60 * 1000, max: 100 }));
 
 app.get('/', (req, res) => res.send('Server is running ✅'));
