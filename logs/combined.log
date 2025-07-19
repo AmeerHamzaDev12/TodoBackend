@@ -90,3 +90,151 @@ info: Login successful: elonmusk.SpaceX@gmail.com {"timestamp":"2025-07-18T13:36
 info: Login successful: 123@gmail.com {"timestamp":"2025-07-18T14:27:18.714Z"}
 info: User already exists: asad@gmail.com {"timestamp":"2025-07-18T14:56:10.555Z"}
 info: User already exists: asad@gmail.com {"timestamp":"2025-07-18T14:56:10.605Z"}
+info: Login successful: 123@gmail.com {"timestamp":"2025-07-18T14:58:40.871Z"}
+info: Login successful: 123@gmail.com {"timestamp":"2025-07-18T14:58:40.882Z"}
+info: User already exists: asad@gmail.com {"timestamp":"2025-07-18T14:58:54.864Z"}
+info: Login successful: 123@gmail.com {"timestamp":"2025-07-18T14:59:34.173Z"}
+info: Login successful: 123@gmail.com {"timestamp":"2025-07-18T14:59:36.020Z"}
+info: Login successful: asad@gmail.com {"timestamp":"2025-07-18T14:59:41.243Z"}
+info: Login successful: asad@gmail.com {"timestamp":"2025-07-18T15:00:49.025Z"}
+warn: Login failed - wrong password for email: raoh2651@gmail.com {"timestamp":"2025-07-18T15:07:09.681Z"}
+warn: Login failed - wrong password for email: raoh2651@gmail.com {"timestamp":"2025-07-18T15:08:25.546Z"}
+warn: Login failed - wrong password for email: raoh2651@gmail.com {"timestamp":"2025-07-18T15:08:25.983Z"}
+warn: Login failed - wrong password for email: raoh2651@gmail.com {"timestamp":"2025-07-18T15:08:34.010Z"}
+warn: Login failed - wrong password for email: raoh2651@gmail.com {"timestamp":"2025-07-18T15:08:43.749Z"}
+warn: Login failed - wrong password for email: raoh2651@gmail.com {"timestamp":"2025-07-18T15:15:24.751Z"}
+warn: Login failed - wrong password for email: raoh2651@gmail.com {"timestamp":"2025-07-18T15:15:37.085Z"}
+info: Login successful: asad@gmail.com {"timestamp":"2025-07-18T15:17:27.614Z"}
+warn: Login failed - wrong password for email: raoh2651@gmail.com {"timestamp":"2025-07-18T15:17:28.180Z"}
+info: Login successful: 123@gmail.com {"timestamp":"2025-07-18T15:19:08.463Z"}
+info: Login successful: asad@gmail.com {"timestamp":"2025-07-18T15:20:04.770Z"}
+info: Login successful: asad@gmail.com {"timestamp":"2025-07-18T15:29:52.180Z"}
+info: Login successful: 123@gmail.com {"timestamp":"2025-07-18T15:29:55.385Z"}
+info: Login successful: 123@gmail.com {"timestamp":"2025-07-18T15:29:56.238Z"}
+info: Login successful: asad@gmail.com {"timestamp":"2025-07-18T15:31:12.141Z"}
+info: Login successful: 123@gmail.com {"timestamp":"2025-07-18T15:42:25.911Z"}
+info: Login successful: 123@gmail.com {"timestamp":"2025-07-18T15:45:37.379Z"}
+info: Login successful: 123@gmail.com {"timestamp":"2025-07-18T15:45:38.603Z"}
+info: Login successful: 123@gmail.com {"timestamp":"2025-07-18T15:45:41.305Z"}
+error: Login failed for 123@gmail.com: 
+Invalid `prisma.user.findUnique()` invocation in
+E:\Todo app Backend\src\controllers\auth.controllers.ts:71:40
+
+  68 }
+  69 
+  70 try {
+→ 71     const user = await prisma.user.findUnique(
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`. {"timestamp":"2025-07-19T05:29:49.407Z"}
+error: Login failed for 123@gmail.com: 
+Invalid `prisma.user.findUnique()` invocation in
+E:\Todo app Backend\src\controllers\auth.controllers.ts:71:40
+
+  68 }
+  69 
+  70 try {
+→ 71     const user = await prisma.user.findUnique(
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`. {"timestamp":"2025-07-19T05:29:49.414Z"}
+error: Login failed for 123@gmail.com: 
+Invalid `prisma.user.findUnique()` invocation in
+E:\Todo app Backend\src\controllers\auth.controllers.ts:71:40
+
+  68 }
+  69 
+  70 try {
+→ 71     const user = await prisma.user.findUnique(
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`. {"timestamp":"2025-07-19T05:29:49.420Z"}
+error: Login failed for 123@gmail.com: 
+Invalid `prisma.user.findUnique()` invocation in
+E:\Todo app Backend\src\controllers\auth.controllers.ts:71:40
+
+  68 }
+  69 
+  70 try {
+→ 71     const user = await prisma.user.findUnique(
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`. {"timestamp":"2025-07-19T05:29:56.356Z"}
+error: Registration failed for raoh2651@gmail.com: 
+Invalid `prisma.user.findUnique()` invocation in
+E:\Todo app Backend\src\controllers\auth.controllers.ts:22:48
+
+  19 }
+  20 
+  21 try {
+→ 22     const existingUser = await prisma.user.findUnique(
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`. {"timestamp":"2025-07-19T05:30:27.220Z"}
+error: Registration failed for raoh2651@gmail.com: 
+Invalid `prisma.user.findUnique()` invocation in
+E:\Todo app Backend\src\controllers\auth.controllers.ts:22:48
+
+  19 }
+  20 
+  21 try {
+→ 22     const existingUser = await prisma.user.findUnique(
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`. {"timestamp":"2025-07-19T05:30:27.223Z"}
+error: Registration failed for raoh2651@gmail.com: 
+Invalid `prisma.user.findUnique()` invocation in
+E:\Todo app Backend\src\controllers\auth.controllers.ts:22:48
+
+  19 }
+  20 
+  21 try {
+→ 22     const existingUser = await prisma.user.findUnique(
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`. {"timestamp":"2025-07-19T05:30:34.071Z"}
+info: Login successful: 123@gmail.com {"timestamp":"2025-07-19T05:33:02.812Z"}
+warn: Login failed - wrong password for email: asad@gmail.com {"timestamp":"2025-07-19T06:16:03.203Z"}
+warn: Login failed - wrong password for email: asad@gmail.com {"timestamp":"2025-07-19T06:16:42.031Z"}
+info: Login successful: asad@gmail.com {"timestamp":"2025-07-19T06:17:00.753Z"}
+info: User registered successfully: tahira832@gmail.com {"timestamp":"2025-07-19T06:33:24.456Z"}
+info: Login successful: tahira832@gmail.com {"timestamp":"2025-07-19T06:33:43.477Z"}
+info: Login successful: 123@gmail.com {"timestamp":"2025-07-19T06:41:49.755Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:15:40.739Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:17:32.074Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:17:32.973Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:18:20.681Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:18:38.600Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:18:52.824Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:19:00.357Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:19:53.552Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:20:28.787Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:21:39.835Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:22:06.423Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:22:13.439Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:22:31.499Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:22:56.007Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:23:03.351Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:23:19.028Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:23:36.372Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:23:46.269Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:24:28.793Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:25:11.869Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:26:48.309Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:27:22.994Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:27:24.404Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:28:05.311Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:30:53.839Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:31:06.385Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:34:30.313Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:38:27.765Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:39:53.802Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:42:44.875Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:43:06.772Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:43:23.182Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:43:49.965Z"}
+info: Login successful: asad@gmail.com {"timestamp":"2025-07-19T07:44:43.412Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:46:51.354Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:47:47.490Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:49:23.097Z"}
+info: → deleteAllTodos called, user: {"timestamp":"2025-07-19T07:49:28.993Z"}

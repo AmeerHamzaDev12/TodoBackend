@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
 import prisma from '../Prisma';
+import logger from '../logger';
 
 interface AuthRequest extends Request {
   user?: { id: string };
@@ -68,5 +69,30 @@ export const deleteTodo = async (req: AuthRequest, res: Response) => {
     res.status(200).json({ success: true, message: 'Todo deleted successfully', data: null });
   } catch (e: any) {
     res.status(500).json({ success: false, message: 'Failed to delete todo', data: { error: e.message } });
+  }
+};
+
+export const deleteAllTodos = async (req: AuthRequest, res: Response) => {
+
+  console.log('🔥 deleteAllTodos invoked for userId =', req.user?.id);
+
+  const userId = req.user?.id;
+  logger.info('→ deleteAllTodos called, user:', userId)
+
+  if (!userId) return res.status(401).json({ success: false, message: 'Unauthorized', data: null });
+
+  try {
+    const result = await prisma.todo.deleteMany({
+      where: { userId }
+    });
+    if (result.count == 0)
+      res.status(404).json({ success: false, message: 'No todos found to delete', data: null });
+    else
+    res.status(200).json({ success: true, message: 'All todos deleted', data: result.count });
+
+  } catch (error) {
+    const errorMessage = error instanceof Error ? error.message : String(error);
+    res.status(500).json({ success: false, message: 'Failed to delete todos', data: { error: errorMessage } });
+
   }
 };

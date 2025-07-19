@@ -1,0 +1,77 @@
+error: Login failed for 123@gmail.com: 
+Invalid `prisma.user.findUnique()` invocation in
+E:\Todo app Backend\src\controllers\auth.controllers.ts:71:40
+
+  68 }
+  69 
+  70 try {
+→ 71     const user = await prisma.user.findUnique(
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`. {"timestamp":"2025-07-19T05:29:49.407Z"}
+error: Login failed for 123@gmail.com: 
+Invalid `prisma.user.findUnique()` invocation in
+E:\Todo app Backend\src\controllers\auth.controllers.ts:71:40
+
+  68 }
+  69 
+  70 try {
+→ 71     const user = await prisma.user.findUnique(
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`. {"timestamp":"2025-07-19T05:29:49.414Z"}
+error: Login failed for 123@gmail.com: 
+Invalid `prisma.user.findUnique()` invocation in
+E:\Todo app Backend\src\controllers\auth.controllers.ts:71:40
+
+  68 }
+  69 
+  70 try {
+→ 71     const user = await prisma.user.findUnique(
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`. {"timestamp":"2025-07-19T05:29:49.420Z"}
+error: Login failed for 123@gmail.com: 
+Invalid `prisma.user.findUnique()` invocation in
+E:\Todo app Backend\src\controllers\auth.controllers.ts:71:40
+
+  68 }
+  69 
+  70 try {
+→ 71     const user = await prisma.user.findUnique(
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`. {"timestamp":"2025-07-19T05:29:56.356Z"}
+error: Registration failed for raoh2651@gmail.com: 
+Invalid `prisma.user.findUnique()` invocation in
+E:\Todo app Backend\src\controllers\auth.controllers.ts:22:48
+
+  19 }
+  20 
+  21 try {
+→ 22     const existingUser = await prisma.user.findUnique(
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`. {"timestamp":"2025-07-19T05:30:27.220Z"}
+error: Registration failed for raoh2651@gmail.com: 
+Invalid `prisma.user.findUnique()` invocation in
+E:\Todo app Backend\src\controllers\auth.controllers.ts:22:48
+
+  19 }
+  20 
+  21 try {
+→ 22     const existingUser = await prisma.user.findUnique(
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`. {"timestamp":"2025-07-19T05:30:27.223Z"}
+error: Registration failed for raoh2651@gmail.com: 
+Invalid `prisma.user.findUnique()` invocation in
+E:\Todo app Backend\src\controllers\auth.controllers.ts:22:48
+
+  19 }
+  20 
+  21 try {
+→ 22     const existingUser = await prisma.user.findUnique(
+Can't reach database server at `localhost:3306`
+
+Please make sure your database server is running at `localhost:3306`. {"timestamp":"2025-07-19T05:30:34.071Z"}
