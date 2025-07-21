@@ -1,5 +1,5 @@
 
-import prisma from './Prisma';
+import prisma from '../src/Prisma';
 
 import bcrypt from 'bcryptjs';
 

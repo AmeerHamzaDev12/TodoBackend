@@ -96,3 +96,48 @@ export const deleteAllTodos = async (req: AuthRequest, res: Response) => {
 
   }
 };
+
+export const editTodo = async (
+  req: AuthRequest,
+  res: Response
+) => {
+  const { title } = req.body;        // ← destructure properly
+  const { id }    = req.params;
+  const userId    = req.user?.id;
+
+  if (!userId)
+    return res
+      .status(401)
+      .json({ success: false, message: 'Unauthorized', data: null });
+
+  if (!title || typeof title !== 'string')
+    return res
+      .status(400)
+      .json({ success: false, message: 'Title is required', data: null });
+
+  try {
+    const existing = await prisma.todo.findUnique({ where: { id } });
+    if (!existing)
+      return res
+        .status(404)
+        .json({ success: false, message: 'Todo not found', data: null });
+    if (existing.userId !== userId)
+      return res
+        .status(403)
+        .json({ success: false, message: 'Access denied', data: null });
+
+    const updated = await prisma.todo.update({
+      where: { id },
+      data: { title },
+    });
+
+    return res
+      .status(200)
+      .json({ success: true, message: 'Todo updated', data: updated });
+
+  } catch (e: any) {
+    return res
+      .status(500)
+      .json({ success: false, message: 'Failed to update todo', data: { error: e.message } });
+  }
+};
